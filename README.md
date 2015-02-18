@@ -1,10 +1,10 @@
 ## Sensu-Plugins-disk-checks
 
-[![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-campfire.svg?branch=master)][1]
-[![Gem Version](https://badge.fury.io/rb/sensu-plugins-campfire.svg)][2]
-[![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-campfire/badges/gpa.svg)][3]
-[![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-campfire/badges/coverage.svg)][4]
-[![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-campfire.svg)][5]
+[![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-campfire.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-campfire)
+[![Gem Version](https://badge.fury.io/rb/sensu-plugins-campfire.svg)](http://badge.fury.io/rb/sensu-plugins-campfire)
+[![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-campfire/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-campfire)
+[![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-campfire/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-campfire)
+[![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-campfire.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-campfire)
 
 ## Functionality
 
@@ -54,9 +54,3 @@ end
 ```
 
 ## Notes
-
-[1]:[https://travis-ci.org/sensu-plugins/sensu-plugins-campfire]
-[2]:[http://badge.fury.io/rb/sensu-plugins-campfire]
-[3]:[https://codeclimate.com/github/sensu-plugins/sensu-plugins-campfire]
-[4]:[https://codeclimate.com/github/sensu-plugins/sensu-plugins-campfire]
-[5]:[https://gemnasium.com/sensu-plugins/sensu-plugins-campfire]
