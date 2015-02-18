@@ -28,26 +28,18 @@ Gem::Specification.new do |s|
   s.require_paths          = ["lib"]
   s.cert_chain             = ["certs/sensu-plugins.pem"]
   s.signing_key            = File.expand_path(pvt_key) if $PROGRAM_NAME =~ /gem\z/
-  s.platform               = ruby
+  s.platform               = Gem::Platform::RUBY
   s.required_ruby_version  = '>= 1.9.3'
 
-  
-  s.add_development_dependency 'codeclimate-test-reporter' 'XXX'
-  
-  s.add_development_dependency 'rubocop' '~> 0.17.0'
-  
-  s.add_development_dependency 'rspec' '~> 3.1'
-  
-  s.add_development_dependency 'bundler' '~> 1.7'
-  
-  s.add_development_dependency 'rake' '~> 10.0'
-  
-  s.add_development_dependency 'github-markup' 'XXX'
-  
-  s.add_development_dependency 'redcarpet' 'XXX'
-  
-  s.add_development_dependency 'yard' 'XXX'
-  
-  s.add_development_dependency 'pry' 'XXX'
-  
+
+  s.add_development_dependency 'codeclimate-test-reporter'
+  s.add_development_dependency 'rubocop', '~> 0.17.0'
+  s.add_development_dependency 'rspec', '~> 3.1'
+  s.add_development_dependency 'bundler', '~> 1.7'
+  s.add_development_dependency 'rake', '~> 10.0'
+  s.add_development_dependency 'github-markup'
+  s.add_development_dependency 'redcarpet'
+  s.add_development_dependency 'yard'
+  s.add_development_dependency 'pry'
+
 end

@@ -1,4 +1,4 @@
-## Sensu-Plugins-disk-checks
+## Sensu-Plugins-campfire
 
 [![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-campfire.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-campfire)
 [![Gem Version](https://badge.fury.io/rb/sensu-plugins-campfire.svg)](http://badge.fury.io/rb/sensu-plugins-campfire)
@@ -9,12 +9,20 @@
 ## Functionality
 
 ## Files
- *
- *
- *
- *
+ * bin/handler-campfire
 
 ## Usage
+
+```
+{ "campfire":
+  {
+    "room": "devops",
+    "room_id" : "123456",
+    "account": "subdomain",
+    "token": "xxxxxxxxxxxxxxxxxxx"
+  }
+}
+```
 
 ## Installation
 
@@ -41,7 +49,7 @@ Using the Sensu **sensu_gem** LWRP
 ```
 sensu_gem 'sensu-plugins-campfire' do
   options('--prerelease')
-  version '0.0.1.alpha.4'
+  version '0.0.1'
 end
 ```
 
@@ -49,7 +57,7 @@ Using the Chef **gem_package** resource
 ```
 gem_package 'sensu-plugins-campfire' do
   options('--prerelease')
-  version '0.0.1.alpha.4'
+  version '0.0.1'
 end
 ```
 
