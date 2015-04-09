@@ -16,10 +16,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-require 'rubygems' if RUBY_VERSION < '1.9.0'
 require 'sensu-handler'
 require 'tinder'
 
+#
+# Campfire
+#
 class Campfire < Sensu::Handler
   def incident_key
     @event['client']['name'] + '/' + @event['check']['name']
@@ -38,7 +40,7 @@ class Campfire < Sensu::Handler
     end
   end
 
-  def handle
+  def handle # rubocop:disable all
     description = @event['notification'] || [
       @event['client']['name'],
       @event['check']['name'],
