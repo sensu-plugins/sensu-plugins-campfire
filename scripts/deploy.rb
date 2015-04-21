@@ -11,9 +11,11 @@ require 'json'
 require 'base64'
 
 ## Environment Setup
-File.open('/home/rof/.gem/credentials', 'w') { |file| file.write("---\n
+File.open('/home/rof/.gem/credentials', 'w') do |file|
+  file.write("---\n
 :rubygems_api_key: #{ ENV['RG_API'] }
-") }
+")
+end
 `chmod 0600 /home/rof/.gem/credentials`
 
 #
@@ -37,5 +39,5 @@ end
 #
 if ENV['CI_MESSAGE'] == 'deploy bump'
   deploy_rubygems(spec, plugin)
-  # create_github_release(spec, plugin)
+  create_github_release(spec, plugin)
 end
