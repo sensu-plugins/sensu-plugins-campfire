@@ -19,11 +19,10 @@ File.open('/home/rof/.gem/credentials', 'w') { |file| file.write("---\n
 #
 # Build a gem and deploy it to rubygems
 #
-def deploy_rubygems
+def deploy_rubygems(spec, plugin)
   `gem build #{ plugin }.gemspec`
   `gem push #{ spec.full_name }.gem`
 end
-
 
 #
 # Create Github tag and release
