@@ -9,3 +9,8 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ### Added
 - initial release
+
+## 0.0.2 - 2015-04-21
+
+### Fixed
+- deployment issue

@@ -10,15 +10,20 @@ require 'date'
 require 'json'
 require 'base64'
 
+## Environment Setup
+File.open('/home/rof/.gem/credentials', 'w') { |file| file.write("---\n
+:rubygems_api_key: #{ ENV['RG_API'] }
+") }
+`chmod 0600 /home/rof/.gem/credentials`
+
 #
 # Build a gem and deploy it to rubygems
 #
-def deploy_rubygems(spec, plugin)
+def deploy_rubygems
   `gem build #{ plugin }.gemspec`
-  `curl --data-binary #{ spec.full_name }.gem \
-        -H $RG_API \
-        https://rubygems.org/api/v1/gems`
+  `gem push #{ spec.full_name }.gem`
 end
+
 
 #
 # Create Github tag and release
@@ -33,5 +38,5 @@ end
 #
 if ENV['CI_MESSAGE'] == 'deploy bump'
   deploy_rubygems(spec, plugin)
-  create_github_release(spec, plugin)
+  # create_github_release(spec, plugin)
 end
