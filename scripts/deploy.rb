@@ -13,7 +13,7 @@ require 'base64'
 #
 # Build a gem and deploy it to rubygems
 #
-def deploy_rubygems
+def deploy_rubygems(spec, plugin)
   `gem build #{ plugin }.gemspec`
   `curl --data-binary #{ spec.full_name }.gem \
         -H $RG_API \
@@ -32,7 +32,6 @@ end
 # If the commit message is anything else we just run tests
 #
 if ENV['CI_MESSAGE'] == 'deploy bump'
-  # version_bump(version_file)
-  deploy_rubygems
+  deploy_rubygems(spec, plugin)
   create_github_release(spec, plugin)
 end
