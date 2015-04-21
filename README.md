@@ -5,6 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-campfire/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-campfire)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-campfire/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-campfire)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-campfire.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-campfire)
+[ ![Codeship Status for sensu-plugins/sensu-plugins-campfire](https://codeship.com/projects/85bce530-ca50-0132-f20b-4a5d1f8b26a4/status?branch=master)](https://codeship.com/projects/75440)
 
 ## Functionality
 
