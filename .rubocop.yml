@@ -5,9 +5,9 @@ MethodLength:
 LineLength:
     Max: 160
 
-Metrics/AbcSize:
+AbcSize:
   Max: 50
-  
+
 FileName:
     Enabled: false
 
