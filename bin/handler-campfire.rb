@@ -40,7 +40,7 @@ class Campfire < Sensu::Handler
     end
   end
 
-  def handle # rubocop:disable all
+  def handle
     description = @event['notification'] || [
       @event['client']['name'],
       @event['check']['name'],
