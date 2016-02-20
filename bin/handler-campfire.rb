@@ -32,11 +32,10 @@ class Campfire < Sensu::Handler
   end
 
   def room
-    # #YELLOW
-    unless settings['campfire']['room_id'].nil? # rubocop:disable UnlessElse
-      return campfire.find_room_by_id(settings['campfire']['room_id'])
-    else
+    if settings['campfire']['room_id'].nil? # rubocop:disable Style/GuardClause
       return campfire.find_room_by_name(settings['campfire']['room'])
+    else
+      return campfire.find_room_by_id(settings['campfire']['room_id'])
     end
   end
 
