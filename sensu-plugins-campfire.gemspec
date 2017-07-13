@@ -3,11 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'date'
 
-if RUBY_VERSION < '2.0.0'
-  require 'sensu-plugins-campfire'
-else
-  require_relative 'lib/sensu-plugins-campfire'
-end
+require_relative 'lib/sensu-plugins-campfire'
 
 # pvt_key = '~/.ssh/gem-private_key.pem'
 

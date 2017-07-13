@@ -10,6 +10,7 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ### Removed
 - Support for Ruby 1.9.3
+- Removed redundant pre-2.0 Ruby testing code
 
 ## [0.0.4] - 2015-07-14
 ### Changed
