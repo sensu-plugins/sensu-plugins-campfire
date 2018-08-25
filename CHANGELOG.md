@@ -5,6 +5,10 @@ This CHANGELOG follows the format listed [here](https://github.com/sensu-plugins
 
 ## [Unreleased]
 
+### Breaking Changes
+- bumped dependency of `sensu-plugin` to `~> 2.5`, you can read about the breaking changes [here](https://github.com/sensu-plugins/sensu-plugin/blob/master/CHANGELOG.md#v200---2017-03-29)
+- removed ruby `< 2.3` support as it is EOL per our [policy](https://github.com/sensu/sensu-docs/blob/master/content/plugins/1.0/faq.md#what-is-the-policy-on-supporting-end-of-lifeeol-ruby-versions)
+
 ## [2.0.1] - 2018-05-02
 ### Security
 - updated yard dependency to `~> 0.9.11` per: https://nvd.nist.gov/vuln/detail/CVE-2017-17042 (@majormoses)
