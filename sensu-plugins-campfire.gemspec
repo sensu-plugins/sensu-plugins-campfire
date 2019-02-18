@@ -32,7 +32,7 @@ Gem::Specification.new do |s| # rubocop:disable Metrics/BlockLength
   s.test_files             = s.files.grep(%r{^(test|spec|features)/})
   s.version                = SensuPluginsCampfire::Version::VER_STRING
 
-  s.add_runtime_dependency 'sensu-plugin', '~> 2.5'
+  s.add_runtime_dependency 'sensu-plugin', '>= 2.5', '< 5.0'
   s.add_runtime_dependency 'tinder',       '1.10.1'
 
   s.add_development_dependency 'bundler',                   '~> 1.7'
